@@ -5,7 +5,7 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
 
     <meta name="author" content="{{ site.name }}" />
     <meta name="description" content="{{ site.description }}">
@@ -14,12 +14,55 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Raleway' />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseUrl }}/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseUrl }}/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseUrl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseUrl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
-
+  <body class="{{ page.class }}">
+    <div class="container">
+      <header class="header">
+        <div class="header__logo">
+          <h4 class="header__logoText">
+            <a class ="header__logoLink" href="{{ site.baseUrl }}/">
+              Allisyn the Editor
+            </a>
+          </h4>
+        </div>
+        <div class="header__navBar">
+          <nav class="navBar">
+            <ul class="navBar__list">
+              <li class="navBar__listItem aboutMe">
+                <a class="navBar__link" href="{{ site.baseUrl }}/">About Me</a>
+              </li>
+              <li class="navBar__listItem testimonials">
+                <a class="navBar__link" href="{{ site.baseUrl }}/testimonials/">Testimonials</a>  
+              </li>
+              <li class="navBar__listItem blog">
+                <a class="navBar__link" href="{{ site.baseUrl }}/blog/">Blog</a>
+              </li>
+              <li class="navBar__listItem navBar__listItem--bordered editingServices">
+                <a class="navBar__link" href="{{ site.baseUrl }}/editing-services/">Editing Services</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="banner banner--{{ page.class }}">
+        <div class="banner__overlay"></div>
+        <div class="banner__text">
+          {{ page.bannerText }}
+        </div>
+      </div>
+      <div class="content">
+        {{ content }}
+      </div>
+    </div>
+  </body>
+<!--
   <body>
     <div class="wrapper-masthead">
       <div class="container">
@@ -53,4 +96,5 @@
 
     {% include analytics.html %}
   </body>
+-->
 </html>
