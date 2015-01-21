@@ -173,10 +173,12 @@
 .testimonial {
   margin-bottom: 2rem;
   //card layout
+  /*
   background-color: white;
   border-radius: 0.5rem;
   padding: 2rem;
   box-shadow: 0.5rem 0.5rem 0.3rem #AAA;
+  */
 
   &__quote {
     margin: 0;
@@ -216,11 +218,12 @@
 }
 
 .about {
+  /*
   background-color: white;
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0.5rem 0.5rem 0.3rem #AAA;
-
+*/
   &__headshot {
     width: 15rem;
     height: 15rem;
@@ -236,13 +239,20 @@
 }
 
 .post {
+  /*
   background-color: white;
   padding: 2rem;
   border-radius: 0.5rem;
   box-shadow: 0.5rem 0.5rem 0.3rem #AAA;
+  */
 }
 
-
+.card {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 0.3rem #AAA;
+}
 
 
 
