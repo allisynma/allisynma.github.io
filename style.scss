@@ -44,13 +44,15 @@
 
   &__logo {
     //float: left;
-    width: 100%;
-    display: inline-block;
+    //width: 100%;
+    //display: inline-block;
+    margin: 1.5rem 1.5rem 0.5rem 1.5rem;
 
     &Text {
       letter-spacing: 0.1rem;
       font-weight: 500;
-      margin: 2rem 2rem 0 2rem;
+      //margin: 2rem 2rem 0 2rem;
+      margin: 0;
     }
 
     &Link {
@@ -61,18 +63,21 @@
 
   &__navBar {
     //display: inline-block;
+    margin: 0.5rem 1.5rem 1.5rem 1.5rem;
   }
 }
 
 .navBar {
-  margin: 0 1rem 1rem 1rem;
+  //margin: 0 1rem 1rem 1rem;
   display: inline-block;
   //float: right;
 
   &__list {
     display: inline-block;
     list-style: none;
-    padding: 1rem;
+    //padding: 1rem;
+    padding: 0;
+    margin: 0;
 
     &Item {
       display: inline-block;
@@ -159,17 +164,26 @@
 .content {
   //max-width: 1000px;
   //margin: 0 auto;
-  padding: 3rem;
+  padding: 1.5rem;
   //text-align: center;
+  //card layout
+  background-color: #DDD;
 }
 
 .testimonial {
   margin-bottom: 2rem;
+  //card layout
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0.5rem 0.5rem 0.3rem #AAA;
 
   &__quote {
     margin: 0;
-    background-color: #DDD;
-    padding: 2rem;
+    //background-color: #DDD;
+    //padding: 2rem;
+    //card layout
+    border-radius: 0.5rem;
 
     &:before {
       content: '\201C';
@@ -182,21 +196,51 @@
       vertical-align: middle;
     }
   }
+
+  &__citation {
+    font-style: normal;
+
+    &Author {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    &Company {
+      display: block;
+    }
+
+    &Link {
+      text-decoration: none;
+    }
+  }
 }
 
-.citation {
-  &Company {
-    display: block;
+.about {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 0.3rem #AAA;
+
+  &__headshot {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 7.5rem;
+    background: url('../images/allisyn-ma.jpg') no-repeat -5rem 0;
+    background-size: cover;
+    margin: 0 auto 2rem auto;
   }
 
-  &Link {
-    text-decoration: none;
+  &__name {
+    text-align: center;
   }
 }
 
-
-
-
+.post {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0.5rem 0.5rem 0.3rem #AAA;
+}
 
 
 
