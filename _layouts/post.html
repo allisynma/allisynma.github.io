@@ -2,16 +2,15 @@
 layout: default
 ---
 
-<article class="post card">
+<article class="post card card--content">
   <h1>{{ page.title }}</h1>
-
   <div class="entry">
     {{ content }}
   </div>
-
   <div class="date">
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
-
-  {% include disqus.html disqus_identifier=page.disqus_identifier %}
 </article>
+<div class="disqusComments card card--content">
+  {% include disqus.html disqus_identifier=page.disqus_identifier %}
+</div>

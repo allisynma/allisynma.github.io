@@ -81,16 +81,15 @@
 
     &Item {
       display: inline-block;
-      //margin: 0.5rem;
-      letter-spacing: 0.2rem;
-      font-size: 1rem;
+      //letter-spacing: 0.2rem;
+      //font-size: 1rem;
+      font-size: 1.4rem;
       text-transform: uppercase;
       cursor: pointer;
       padding: 0.5rem;
       width: 50%;
       box-sizing: border-box;
       float: left;
-
 /*
       &--bordered {
         padding: 1.2rem;
@@ -133,6 +132,16 @@
     background-size: cover;
   }
 
+  &--blog {
+    background: url('../images/harry-potter-woods.jpg') no-repeat 100% 50%;
+    background-size: cover;
+  }
+
+  &--editingServices {
+    background: url('../images/scrabble-letters.jpg') no-repeat 50% 50%;
+    background-size: cover;
+  }
+
   &--testimonials {
     background: url('../images/los-arcos-large.jpg') no-repeat 50% 50%;
     background-size: cover;
@@ -156,7 +165,7 @@
     //max-width: 900px;
     //margin: 0 auto;
     padding: 2rem;
-    font-size: 1rem;
+    font-size: 1.2rem;
     letter-spacing: 0.5rem;
   }
 }
@@ -164,14 +173,14 @@
 .content {
   //max-width: 1000px;
   //margin: 0 auto;
-  padding: 0.5rem;
+  //padding: 0.5rem;
   //text-align: center;
   //card layout
-  background-color: #DDD;
+  //background-color: #DDD;
 }
 
 .testimonial {
-  margin-bottom: 2rem;
+
   //card layout
   /*
   background-color: white;
@@ -203,7 +212,7 @@
     font-style: normal;
 
     &Author {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-weight: 600;
     }
 
@@ -224,6 +233,7 @@
   border-radius: 0.5rem;
   box-shadow: 0.5rem 0.5rem 0.3rem #AAA;
 */
+
   &__headshot {
     width: 15rem;
     height: 15rem;
@@ -248,142 +258,33 @@
 }
 
 .card {
-  background-color: white;
-  padding: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0.5rem 0.5rem 0.3rem #AAA;
-}
 
+  &--content {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: white;
+  }
 
-
-
-
-/*
-.aboutMe {
-  & & {
-    .navBar__link {
-      color: #999;
-    }
+  &--noBoxShadow {
+    box-shadow: none;
   }
 }
 
-.blog {
-  & & {
-    .navBar__link {
-      color: #999;
-    }
+.container {
+  background-color: #DDD;
+  padding: 0.5rem;
+  //margin-top: 1rem;
+}
+
+.services {
+  &__information {
+
   }
 }
 
-.header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  color: white;
-
-  &__logo {
-    float: left;
-
-    &Text {
-      letter-spacing: 0.1rem;
-      font-weight: 500;
-      margin: 2rem;
-    }
-
-    &Link {
-      color: white;
-    	text-decoration: none;
-    }
-  }
+.disqusComments {
+  //height: 250px;
+  //overflow: hidden;
 }
-
-.navBar {
-  margin: 1rem;
-  float: right;
-
-  &__list {
-    list-style: none;
-
-    &Item {
-      display: inline-block;
-      margin: 1rem;
-      letter-spacing: 0.2rem;
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      cursor: pointer;
-
-      &--bordered {
-        padding: 1.2rem;
-        border: 0.2rem solid white;
-        transition: background-color .1s 0s ease-in-out, color .1s 0s ease-in-out;
-
-        &:hover {
-          background-color: white;
-
-          .navBar__link {
-            color: black;
-          }
-        }
-      }
-    }
-  }
-
-  &__link {
-    color: white;
-    text-decoration: none;
-
-    &:hover {
-      color: #999;
-    }
-  }
-}
-
-.banner {
-  position: relative;
-  top: 0;    
-  left: 0;
-  width: 100%;
-  //min-height: 500px;
-  padding-top: 22rem;
-  padding-bottom: 22rem;
-  background-size: cover;
-
-  &--aboutMe {
-  	  background: url('../images/wallowa-lake-large.jpg') no-repeat 50% 50%;
-  }
-
-  &__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(32,26,22,.7);
-  }
-
-  &__text {
-    position: relative;
-    color: white;
-    z-index: 100;
-    text-align: center;
-    text-transform: uppercase;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 25px;
-  }
-}
-
-.content {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 5rem;
-  //text-align: center;
-}
-
-.u-spacedOut {
-  letter-spacing: 0.5rem;
-}
-*/
-
