@@ -15,10 +15,10 @@
     <![endif]-->
 
     <link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Raleway' />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseUrl }}/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseUrl }}/skeleton.css" />
-    <link rel="stylesheet" type="text/css" href="{{ site.baseUrl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseUrl }}/feed.xml" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/skeleton.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
@@ -26,26 +26,26 @@
     <div class="container">
       <header class="header">
         <div class="header__logo">
-          <h4 class="header__logoText">
-            <a class ="header__logoLink" href="{{ site.baseUrl }}/">
+          <h1 class="header__logoText">
+            <a class ="header__logoLink" href="{{ site.url }}/">
               Allisyn the Editor
             </a>
-          </h4>
+          </h1>
         </div>
         <div class="header__navBar">
           <nav class="navBar">
             <ul class="navBar__list">
               <li class="navBar__listItem blog">
-                <a class="navBar__link" href="{{ site.baseUrl }}/">Blog</a>
+                <a class="navBar__link" href="{{ site.url }}/">Blog</a>
               </li>
               <li class="navBar__listItem aboutMe">
-                <a class="navBar__link" href="{{ site.baseUrl }}/about-me/">About Me</a>
+                <a class="navBar__link" href="{{ site.url }}/about-me/">About Me</a>
               </li>
               <li class="navBar__listItem testimonials">
-                <a class="navBar__link" href="{{ site.baseUrl }}/testimonials/">Testimonials</a>  
+                <a class="navBar__link" href="{{ site.url }}/testimonials/">Testimonials</a>  
               </li>
               <li class="navBar__listItem navBar__listItem--bordered editingServices">
-                <a class="navBar__link" href="{{ site.baseUrl }}/editing-services/">Editing Services</a>
+                <a class="navBar__link" href="{{ site.url }}/editing-services/">Editing Services</a>
               </li>
             </ul>
           </nav>
@@ -60,41 +60,7 @@
       <div class="content">
         {{ content }}
       </div>
+      {% include footer.html %}
     </div>
   </body>
-<!--
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-          
-          <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
-          </div>
-          
-          <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
-  </body>
--->
 </html>

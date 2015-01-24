@@ -1,5 +1,8 @@
 ---
 ---
+html {
+  background-color: #CCC;
+}
 
 .aboutMe {
   & & {
@@ -43,46 +46,35 @@
   color: white;
 
   &__logo {
-    //float: left;
-    //width: 100%;
-    //display: inline-block;
     margin: 1.5rem 1.5rem 0.5rem 1.5rem;
 
     &Text {
       letter-spacing: 0.1rem;
       font-weight: 500;
-      //margin: 2rem 2rem 0 2rem;
       margin: 0;
     }
 
     &Link {
       color: white;
-      text-decoration: none;
     }
   }
 
   &__navBar {
-    //display: inline-block;
     margin: 0.5rem 1.5rem 1.5rem 1.5rem;
   }
 }
 
 .navBar {
-  //margin: 0 1rem 1rem 1rem;
   display: inline-block;
-  //float: right;
 
   &__list {
     display: inline-block;
     list-style: none;
-    //padding: 1rem;
     padding: 0;
     margin: 0;
 
     &Item {
       display: inline-block;
-      //letter-spacing: 0.2rem;
-      //font-size: 1rem;
       font-size: 1.4rem;
       text-transform: uppercase;
       cursor: pointer;
@@ -90,27 +82,11 @@
       width: 50%;
       box-sizing: border-box;
       float: left;
-/*
-      &--bordered {
-        padding: 1.2rem;
-        border: 0.2rem solid white;
-        transition: background-color .1s 0s ease-in-out, color .1s 0s ease-in-out;
-
-        &:hover {
-          background-color: white;
-
-          .navBar__link {
-            color: black;
-          }
-        }
-      }
-      */
     }
   }
 
   &__link {
     color: white;
-    text-decoration: none;
 
     &:hover {
       color: #999;
@@ -133,8 +109,13 @@
   }
 
   &--blog {
-    background: url('../images/harry-potter-woods.jpg') no-repeat 100% 50%;
+    background: url('../images/table-large.jpg') no-repeat 50% 50%;
     background-size: cover;
+
+    &--originStory {
+      background: url('../images/sunset-in-mexico-large.jpg') no-repeat 50% 50%;
+      background-size: cover;
+    }
   }
 
   &--editingServices {
@@ -153,47 +134,26 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(32,26,22,.7);
+    //background: rgba(32,26,22,.7);
+    background: rgba(30,30,30,.7);
   }
 
   &__text {
     position: relative;
     color: white;
-    //z-index: 100;
     text-align: center;
     text-transform: uppercase;
-    //max-width: 900px;
-    //margin: 0 auto;
-    padding: 2rem;
+    //padding: 2rem;
     font-size: 1.4rem;
     letter-spacing: 0.2rem;
+    //margin: 2rem;
+    margin: 3rem;
   }
 }
 
-.content {
-  //max-width: 1000px;
-  //margin: 0 auto;
-  //padding: 0.5rem;
-  //text-align: center;
-  //card layout
-  //background-color: #DDD;
-}
-
 .testimonial {
-
-  //card layout
-  /*
-  background-color: white;
-  border-radius: 0.5rem;
-  padding: 2rem;
-  box-shadow: 0.5rem 0.5rem 0.3rem #AAA;
-  */
-
   &__quote {
     margin: 0;
-    //background-color: #DDD;
-    //padding: 2rem;
-    //card layout
     border-radius: 0.5rem;
 
     &:before {
@@ -219,21 +179,10 @@
     &Company {
       display: block;
     }
-
-    &Link {
-      text-decoration: none;
-    }
   }
 }
 
 .about {
-  /*
-  background-color: white;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0.5rem 0.5rem 0.3rem #AAA;
-*/
-
   &__headshot {
     width: 15rem;
     height: 15rem;
@@ -249,16 +198,17 @@
 }
 
 .post {
-  /*
-  background-color: white;
-  padding: 2rem;
-  border-radius: 0.5rem;
-  box-shadow: 0.5rem 0.5rem 0.3rem #AAA;
-  */
+  &__title {
+    //color: #222;
+  }
+
+  &__readMore {
+    //color: #222;
+  }
 }
 
 .card {
-  border-radius: 0.5rem;
+  //border-radius: 0.5rem;
   box-shadow: 0.5rem 0.5rem 0.3rem #AAA;
 
   &--content {
@@ -273,9 +223,7 @@
 }
 
 .container {
-  background-color: #DDD;
   padding: 0.5rem;
-  //margin-top: 1rem;
 }
 
 .services {
@@ -284,7 +232,154 @@
   }
 }
 
-.disqusComments {
-  //height: 250px;
-  //overflow: hidden;
+@media (min-width: 550px) {
+  html {
+    font-size: 75%;
+  }
+
+  .banner {
+    &__text {
+      width: 450px;
+      margin: 4rem auto;
+      //margin: 5rem 6rem;
+    }
+  }
+
+  .card--content {
+    padding: 1.5rem;
+  }
 }
+
+.contact {
+  &__gotcha {
+    display: none;
+  }
+}
+
+.footer {
+  clear: both;
+  position: relative;
+  bottom: -3rem;
+  margin: 0 -0.5rem;
+
+  &__contact {
+    padding: 2rem;
+    font-size: 2rem;
+    text-align: center;
+    background-color: white;
+  }
+}
+
+/*
+@media (min-width: 600px) {
+  .banner {
+    &__text {
+      margin: 10rem;
+    }
+  }
+}
+*/
+@media (min-width: 750px) {
+  html {
+    font-size: 87.5%
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .header {
+    &__logo {
+      display: inline-block;
+      margin-left: 2.5rem;
+      margin-top: 2rem;
+    }
+
+    &__navBar {
+      position: absolute;
+      top: 0;
+      right: 0;
+      //margin-top: 2rem;
+      margin-top: 2.75rem;
+      margin-right: 2.5rem;
+    }
+  }
+
+  .navBar {
+    &__listItem {
+      width: auto;
+      padding-left: 1rem;
+      font-size: 1rem;
+    }
+  }
+
+  .banner {
+    &__text {
+      width: 600px;
+      margin: 5rem auto;
+      //margin: 5rem 7rem;
+    }
+  }
+
+  .card--content {
+    padding: 2rem;
+  }
+
+  .service {
+    width: 49%;
+    box-sizing: border-box;
+    float: left;
+
+    &--type {
+      float: right;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  html {
+    //font-size: 100%;
+  }
+
+  .header {
+    &__logo {
+      //margin-left: 2rem;
+    }
+
+    &__navBar {
+      //margin-top: 2.25rem;
+      //margin-right: 2.5rem;
+    }
+  }
+
+  .navBar {
+    &__listItem {
+      padding-left: 1.5rem;
+    }
+  }
+
+  .banner {
+    &__text {
+      margin: 6rem auto;
+
+      .banner--editingServices & {
+        min-width: 75%;
+      }
+    }
+  }
+
+  .card--content {
+    padding: 3rem;
+  }
+}
+
+.u-paddedList {
+  padding: 0 2rem;
+}
+
+.u-separated {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #AAA;
+}
+
