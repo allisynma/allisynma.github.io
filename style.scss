@@ -119,7 +119,7 @@ html {
   }
 
   &--editingServices {
-    background: url('../images/scrabble-letters.jpg') no-repeat 50% 50%;
+    background: url('../images/scrabble-letters-large.jpg') no-repeat 50% 50%;
     background-size: cover;
   }
 
@@ -139,8 +139,7 @@ html {
     left: 0;
     width: 100%;
     height: 100%;
-    //background: rgba(32,26,22,.7);
-    background: rgba(30,30,30,.7);
+    background: rgba(30, 30, 30, 0.7);
   }
 
   &__text {
@@ -192,7 +191,7 @@ html {
     width: 15rem;
     height: 15rem;
     border-radius: 7.5rem;
-    background: url('../images/allisyn-ma.jpg') no-repeat -5rem 0;
+    background: url('../images/allisyn-ma-large.jpg') no-repeat -5rem 0;
     background-size: cover;
     margin: 0 auto 2rem auto;
   }
