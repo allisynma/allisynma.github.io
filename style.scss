@@ -128,6 +128,11 @@ html {
     background-size: cover;
   }
 
+  &--contact {
+    background: url('../images/boards-large.jpg') no-repeat 50% 50%;
+    background-size: cover;
+  }
+
   &__overlay {
     position: absolute;
     top: 0;
@@ -254,6 +259,10 @@ html {
   &__gotcha {
     display: none;
   }
+
+  &__message {
+    resize: vertical;
+  }
 }
 
 .footer {
@@ -270,15 +279,6 @@ html {
   }
 }
 
-/*
-@media (min-width: 600px) {
-  .banner {
-    &__text {
-      margin: 10rem;
-    }
-  }
-}
-*/
 @media (min-width: 750px) {
   html {
     font-size: 87.5%
@@ -299,7 +299,6 @@ html {
       position: absolute;
       top: 0;
       right: 0;
-      //margin-top: 2rem;
       margin-top: 2.75rem;
       margin-right: 2.5rem;
     }
@@ -317,7 +316,6 @@ html {
     &__text {
       width: 600px;
       margin: 5rem auto;
-      //margin: 5rem 7rem;
     }
   }
 
