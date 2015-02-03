@@ -201,14 +201,8 @@ html {
   }
 }
 
-.post {
-  &__title {
-    //color: #222;
-  }
-
-  &__readMore {
-    //color: #222;
-  }
+.posts {
+  margin-bottom: 4rem;
 }
 
 .card {
@@ -237,9 +231,9 @@ html {
 }
 
 @media (min-width: 550px) {
-  html {
-    font-size: 75%;
-  }
+  //html {
+   // font-size: 75%;
+  //}
 
   .banner {
     &__text {
@@ -279,9 +273,9 @@ html {
 }
 
 @media (min-width: 750px) {
-  html {
-    font-size: 87.5%
-  }
+  //html {
+  //  font-size: 87.5%
+  //}
 
   .container {
     padding: 1rem;
@@ -307,7 +301,7 @@ html {
     &__listItem {
       width: auto;
       padding-left: 1rem;
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
   }
 
