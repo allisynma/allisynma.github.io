@@ -224,12 +224,6 @@ html {
   padding: 0.5rem;
 }
 
-.services {
-  &__information {
-
-  }
-}
-
 @media (min-width: 550px) {
   //html {
    // font-size: 75%;
@@ -320,6 +314,11 @@ html {
     width: 49%;
     box-sizing: border-box;
     float: left;
+
+    &--special {
+      float: none;
+      width: auto;
+    }
 
     &--type {
       float: right;
