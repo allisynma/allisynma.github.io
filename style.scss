@@ -116,6 +116,16 @@ html {
       background: url('../images/sunset-in-mexico-large.jpg') no-repeat 50% 50%;
       background-size: cover;
     }
+
+    &--theGirlWithTheDragonTattoo {
+      background: url('../images/dragon-tatoo-large.png') no-repeat 50% 50%;
+      background-size: contain;
+    }
+
+    &--thePerksOfBeingAWallflower {
+      background: url('../images/wallflower-large.jpg') no-repeat 50% 50%;
+      background-size: cover;
+    }
   }
 
   &--editingServices {
