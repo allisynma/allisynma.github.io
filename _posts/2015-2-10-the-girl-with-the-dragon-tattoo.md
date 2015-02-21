@@ -1,6 +1,6 @@
 ---
 layout: post
-title: The Girl With The Dragon Tattoo
+title: The Girl with the Dragon Tattoo
 class: blog--theGirlWithTheDragonTattoo
 permalink: /blog/the-girl-with-the-dragon-tattoo/
 ---
