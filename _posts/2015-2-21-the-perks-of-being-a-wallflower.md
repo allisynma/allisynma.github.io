@@ -4,7 +4,7 @@ title: The Perks of Being a Wallflower
 class: blog--thePerksOfBeingAWallflower
 permalink: /blog/the-perks-of-being-a-wallflower/
 ---
-#The Perks of Being a Wallflower by Stephen Chbosky
+#by Stephen Chbosky
 
 Disclaimer: There are spoilers! So go read the book first, and then come back and read my blog :)
 
