@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Origin Story
-class: blog--originStory
+class: originStory
 permalink: /blog/origin-story/
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Perks of Being a Wallflower
-class: blog--thePerksOfBeingAWallflower
+class: thePerksOfBeingAWallflower
 permalink: /blog/the-perks-of-being-a-wallflower/
 author: Stephen Chbosky
 ---

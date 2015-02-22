@@ -99,7 +99,6 @@ html {
   top: 0;    
   left: 0;
   width: 100%;
-  //min-height: 500px;
   padding-top: 12rem;
   padding-bottom: 8rem;
 
@@ -111,21 +110,21 @@ html {
   &--blog {
     background: url('../images/table-large.jpg') no-repeat 50% 50%;
     background-size: cover;
+  }
 
-    &--originStory {
-      background: url('../images/sunset-in-mexico-large.jpg') no-repeat 50% 50%;
-      background-size: cover;
-    }
+  &--originStory {
+    background: url('../images/sunset-in-mexico-large.jpg') no-repeat 50% 50%;
+    background-size: cover;
+  }
 
-    &--theGirlWithTheDragonTattoo {
-      background: url('../images/dragon-tatoo-large.png') no-repeat 50% 50%;
-      background-size: contain;
-    }
+  &--theGirlWithTheDragonTattoo {
+    background: url('../images/dragon-tatoo-large.png') no-repeat 50% 50%;
+    background-size: contain;
+  }
 
-    &--thePerksOfBeingAWallflower {
-      background: url('../images/wallflower-large.jpg') no-repeat 50% 50%;
-      background-size: cover;
-    }
+  &--thePerksOfBeingAWallflower {
+    background: url('../images/wallflower-large.jpg') no-repeat 50% 50%;
+    background-size: cover;
   }
 
   &--editingServices {
@@ -157,10 +156,8 @@ html {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    //padding: 2rem;
     font-size: 1.4rem;
     letter-spacing: 0.2rem;
-    //margin: 2rem;
     margin: 3rem;
   }
 }
@@ -211,17 +208,42 @@ html {
   }
 }
 
-.posts {
-  margin-bottom: 4rem;
+.post {
+  margin: 3rem 0;
+
+  &s {
+    margin-bottom: 4rem;
+  }
+
+  &__image {
+    width: 15rem;
+    height: 15rem;
+    margin: 0 auto 2rem auto;
+    border-radius: 7.5rem;
+
+    &--originStory {
+      background: url('../images/sunset-in-mexico-large.jpg') no-repeat 50% 50%;
+      background-size: cover;
+    }
+
+    &--theGirlWithTheDragonTattoo {
+      background: url('../images/dragon-tatoo-large.png') no-repeat 50% 50%;
+      background-size: contain;
+    }
+
+    &--thePerksOfBeingAWallflower {
+      background: url('../images/wallflower-large.jpg') no-repeat 50% 50%;
+      background-size: cover;
+    }
+  }
 }
 
 .card {
-  //border-radius: 0.5rem;
   box-shadow: 0.5rem 0.5rem 0.3rem #AAA;
 
   &--content {
     margin-top: 1rem;
-    padding: 1rem;
+    padding: 2rem 1rem;
     background-color: white;
   }
 
@@ -232,24 +254,6 @@ html {
 
 .container {
   padding: 0.5rem;
-}
-
-@media (min-width: 550px) {
-  //html {
-   // font-size: 75%;
-  //}
-
-  .banner {
-    &__text {
-      width: 450px;
-      margin: 4rem auto;
-      //margin: 5rem 6rem;
-    }
-  }
-
-  .card--content {
-    padding: 1.5rem;
-  }
 }
 
 .contact {
@@ -276,11 +280,24 @@ html {
   }
 }
 
-@media (min-width: 750px) {
-  //html {
-  //  font-size: 87.5%
-  //}
+@media (min-width: 550px) {
+  .banner {
+    &__text {
+      width: 450px;
+      margin: 4rem auto;
+    }
+  }
 
+  .card--content {
+    padding: 2.5rem 2rem;
+  }
+
+  .post__image {
+    margin-bottom: 2.5rem;
+  }
+}
+
+@media (min-width: 750px) {
   .container {
     padding: 1rem;
   }
@@ -321,7 +338,6 @@ html {
   }
 
   .service {
-    width: 49%;
     box-sizing: border-box;
     float: left;
 
@@ -337,21 +353,6 @@ html {
 }
 
 @media (min-width: 1000px) {
-  html {
-    //font-size: 100%;
-  }
-
-  .header {
-    &__logo {
-      //margin-left: 2rem;
-    }
-
-    &__navBar {
-      //margin-top: 2.25rem;
-      //margin-right: 2.5rem;
-    }
-  }
-
   .navBar {
     &__listItem {
       padding-left: 1.5rem;
@@ -369,7 +370,8 @@ html {
   }
 
   .card--content {
-    padding: 3rem;
+    padding: 5rem 20rem;
+    font-size: 1.8rem;
   }
 }
 

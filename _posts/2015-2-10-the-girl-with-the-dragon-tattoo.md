@@ -1,8 +1,9 @@
 ---
 layout: post
 title: The Girl with the Dragon Tattoo
-class: blog--theGirlWithTheDragonTattoo
+class: theGirlWithTheDragonTattoo
 permalink: /blog/the-girl-with-the-dragon-tattoo/
+author: Stieg Larsson
 ---
 
 Welcome to my new series of book vs. movie blog posts! The first book/movie combo I am covering is The Girl With The Dragon Tattoo by Stieg Larsson and the corresponding movie from 2011 produced by Columbia Pictures. 
