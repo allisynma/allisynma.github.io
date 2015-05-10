@@ -4,6 +4,23 @@ class: notFound
 title: Page not found
 ---
 
-<div class="notFound card card--content">
-	Sorry, we can't find the page that you're looking for.
+<div class="notFound">
+	<div class="contact">
+	  <div class="contact__information">
+	    Can't find what you're looking for? Send me a message!
+	  </div>
+	  <div class="contact__form">
+	    <form method="POST" action="//formspree.io/allisynma@gmail.com">
+	      <label>Name:</label>
+	      <input class="u-full-width" type="text" name="name">
+	      <label>Email:</label>
+	      <input class="u-full-width" type="email" name="_replyto">
+	      <label>Message:</label>
+	      <textarea class="u-full-width contact__message" name="message" rows="10"></textarea>
+	      <input class="contact__submit" type="submit" value="Send">
+	      <input class="contact__gotcha" type="text" name="_gotcha" />
+	      <input type="hidden" name="_next" value="//{{ site.url }}/contact/" />
+	    </form>
+	  </div>
+	</div>
 </div>

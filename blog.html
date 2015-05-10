@@ -5,17 +5,24 @@ permalink: /blog/
 title: Blog
 ---
 
-<div class="posts">
+<div class="blog">
   {% for post in site.posts %}
-    <article class="post card card--content">    
- 		<div class="post__image post__image--{{post.class}}"></div>
-      <h1><a class="post__title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <article class="blog__post">    
+ 		<div class="blog__postImage blog__postImage--{{post.class}}"></div>
+      <h2 class="blog__postTitle">
+      	<a class="blog__postTitleLink" href="{{ site.baseurl }}{{ post.url }}">
+      		{{ post.title }}
+      	</a>
+      </h2>
 
-      <div class="entry">
+      <div class="blog__postContent">
         {{ post.content | truncatewords: 100 }}
       </div>
       
-      <a href="{{ site.baseurl }}{{ post.url }}" class="post__readMore">Read More</a>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="blog__postReadMore">Read More</a>
     </article>
+    {% if forloop.last == false %}
+      <hr />
+    {% endif %}
   {% endfor %}
 </div>

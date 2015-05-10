@@ -1,70 +1,72 @@
 ---
 ---
+
 html {
-  height: 100%;
+  //height: 100%;
+  box-sizing: border-box;
   background-color: #DDD;
 }
 
 body {
-  height: 100%;
+  //min-height: 100%;
 }
 
 .container {
   height: 100%;
+  //padding: 0.5rem;
 }
 
 .content {
-  margin-bottom: 1rem;
+  //margin-bottom: 1rem;
+  background-color: white;
 }
 
-.aboutMe {
-  & & {
-    .navBar__link {
-      color: #999;
-    }
+#about {
+  .navBar__link--about {
+    color: #999;
   }
 }
 
-.blog {
-  & & {
-    .navBar__link {
-      color: #999;
-    }
+#blog {
+  .navBar__link--blog {
+    color: #999;
   }
 }
 
-.testimonials {
-  & & {
-    .navBar__link {
-      color: #999;
-    }
+#testimonials {
+  .navBar__link--testimonials {
+    color: #999;
   }
 }
 
-.editingServices {
-  & & {
-    .navBar__link {
-      color: #999;
-    }
+#editing {
+  .navBar__link--editing {
+    color: #999;
   }
 }
-
 
 .header {
   position: absolute;
-  top: 0;
-  left: 0;
+  //top: 0;
+  //left: 0;
   width: 100%;
   z-index: 100;
-  color: white;
+  //color: white;
 
   &__logo {
-    margin: 1.5rem 1.5rem 0.5rem 1.5rem;
+    //margin: 1.5rem 1.5rem 0.5rem 1.5rem;
+    margin: 1.6rem;
+    //display: inline-block;
+
+    @media (min-width: 750px) {
+      float: left;
+    }
 
     &Text {
-      letter-spacing: 0.1rem;
-      font-weight: 500;
-      margin: 0;
+      letter-spacing: 0.2rem;
+      font-size: 2.4rem;
+      //font-weight: 500;
+      //margin: 0;
     }
 
     &Link {
@@ -73,33 +75,53 @@ body {
   }
 
   &__navBar {
-    margin: 0.5rem 1.5rem 1.5rem 1.5rem;
+    //margin: 0.5rem 1.5rem 1.5rem 1.5rem;
+    margin: 1.6rem;
+
+    @media (min-width: 550px) {
+      width: 50%;
+    }
+
+    @media (min-width: 750px) {
+      float: right;
+      width: auto;
+    }
   }
 }
 
 .navBar {
-  display: inline-block;
+  //display: inline-block;
 
   &__list {
-    display: inline-block;
+    //display: inline-block;
     list-style: none;
-    padding: 0;
-    margin: 0;
+    //padding: 0;
+    //margin: 0;
+    overflow: hidden;
 
     &Item {
-      display: inline-block;
+      //display: inline-block;
       font-size: 1.4rem;
       text-transform: uppercase;
-      cursor: pointer;
-      padding-left: 0.5rem;
+      //cursor: pointer;
+      //padding-left: 0.5rem;
       width: 50%;
-      box-sizing: border-box;
+      //box-sizing: border-box;
       float: left;
+
+      @media (min-width: 750px) {
+        width: auto;
+        margin-left: 1.6rem;
+      }
     }
   }
 
   &__link {
     color: white;
+
+    @media (min-width: 750px) {
+      line-height: 3.4;
+    }
 
     &:hover {
       color: #999;
@@ -111,52 +133,54 @@ body {
   position: relative;
   top: 0;    
   left: 0;
-  width: 100%;
-  padding-top: 12rem;
+  //width: 100%;
+  //padding-top: 12rem;
+  padding-top: 13rem;
+  //padding-bottom: 8rem;
   padding-bottom: 8rem;
 
-  &--aboutMe {
-    background: url('../images/wallowa-lake-large.jpg') no-repeat 50% 50%;
+  &--about {
+    background: url('../images/wallowa-lake.jpg') no-repeat 50% 50%;
     background-size: cover;
   }
 
   &--blog {
-    background: url('../images/table-large.jpg') no-repeat 50% 50%;
+    background: url('../images/table.jpg') no-repeat 50% 50%;
     background-size: cover;
   }
 
   &--originStory {
-    background: url('../images/sunset-in-mexico-large.jpg') no-repeat 50% 50%;
+    background: url('../images/sunset-in-mexico.jpg') no-repeat 50% 50%;
     background-size: cover;
   }
 
   &--theGirlWithTheDragonTattoo {
-    background: url('../images/dragon-tatoo-large.png') no-repeat 50% 50%;
+    background: url('../images/dragon-tatoo.png') no-repeat 50% 50%;
     background-size: contain;
   }
 
   &--thePerksOfBeingAWallflower {
-    background: url('../images/wallflower-large.jpg') no-repeat 50% 50%;
+    background: url('../images/wallflower.jpg') no-repeat 50% 50%;
     background-size: cover;
   }
 
-  &--editingServices {
-    background: url('../images/scrabble-letters-large.jpg') no-repeat 50% 50%;
+  &--editing {
+    background: url('../images/scrabble-letters.jpg') no-repeat 50% 50%;
     background-size: cover;
   }
 
   &--testimonials {
-    background: url('../images/los-arcos-large.jpg') no-repeat 50% 50%;
+    background: url('../images/los-arcos.jpg') no-repeat 50% 50%;
     background-size: cover;
   }
 
   &--contact {
-    background: url('../images/boards-large.jpg') no-repeat 50% 50%;
+    background: url('../images/boards.jpg') no-repeat 50% 50%;
     background-size: cover;
   }
 
   &--notFound {
-    background: url('../images/road-closed-large.jpg') no-repeat 50% 50%;
+    background: url('../images/road-closed.jpg') no-repeat 50% 50%;
     background-size: cover;
   }
 
@@ -169,26 +193,49 @@ body {
     background: rgba(30, 30, 30, 0.7);
   }
 
-  &__text {
-    position: relative;
+  &__content {
+    //display: table;
+    //position: relative;
     color: white;
     text-align: center;
     text-transform: uppercase;
-    font-size: 1.4rem;
+    //font-size: 1.4rem;
+    font-size: 1.2rem;
     letter-spacing: 0.2rem;
-    margin: 3rem;
+    //margin: 3rem;
+    margin: 1.6rem;
+    height: 7.8rem;
+
+    &Text {
+      //display: table-cell;
+      //vertical-align: middle;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+
+      @media (min-width: 550px) {
+        padding: 0 10rem;
+      }
+
+      @media (min-width: 1000px) {
+        padding: 0 20rem;
+      }
+    }
   }
 
   &__contact {
     position: absolute;
-    right: 1rem;
-    bottom: 1rem;
+    //right: 1rem;
+    right: 1.6rem;
+    //bottom: 1rem;
+    bottom: 1.6rem;
     border: 0.2rem solid white;
     cursor: pointer;
 
     &Link {
       display: inline-block;
-      padding: 1rem;
+      //padding: 1rem;
+      padding: 0.8rem;
       color: white;
     }
 
@@ -196,13 +243,46 @@ body {
       background-color: white;
 
       .banner__contactLink {
-        color: black;
+        color: #222;
       }
     }
   }
 }
 
 .testimonial {
+  margin: 1.6rem;
+  overflow: auto;
+
+  @media (min-width: 550px) {
+    margin: 1.6rem 3.2rem;
+    width: 50%;
+
+      &:nth-of-type(odd) {
+        float: left;
+      }
+
+      &:nth-of-type(even) {
+        float: right;
+      }
+  }
+
+  @media (min-width: 750px) {
+    margin: 1.6rem 6.4rem;
+  }
+
+  &s {
+    display: inline-block;
+
+    @media (min-width: 550px) {
+      margin: 2.4rem 0;
+    }
+    
+    &__header {
+      margin: 1.6rem;
+      text-align: center;
+    }
+  }
+
   &__quote {
     margin: 0;
     border-radius: 0.5rem;
@@ -221,53 +301,235 @@ body {
 
   &__citation {
     font-style: normal;
+    display: inline-block;
+    height: 6.0rem;
+
+    &Book {
+      &Cover {
+        //display: inline-block;
+        float: right;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 1.6rem;
+
+        &Image {
+          display: block;
+        }
+      }
+    }
 
     &Author {
       font-size: 1.6rem;
       font-weight: 600;
+      margin-left: 1.6rem;
+      margin-right: 5.6rem;
+      padding-left: 0.8rem;
+      border-left: 0.4rem solid #ddd;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      padding-right: 0.8rem;
     }
 
     &Company {
-      display: block;
+      &Logo{
+        //display: block;
+        float: right;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 1.6rem;
+
+        &Image {
+          display: block;
+        }
+      }
     }
   }
 }
 
 .about {
+  display: inline-block;
+
+  @media (min-width: 550px) {
+    margin: 2.4rem 0;
+  }
+
   &__headshot {
-    width: 15rem;
-    height: 15rem;
-    border-radius: 7.5rem;
-    background: url('../images/allisyn-ma-large.jpg') no-repeat -5rem 0;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 8rem;
+    background: url('../images/allisyn-ma.jpg') no-repeat -6rem 0;
     background-size: cover;
-    margin: 0 auto 2rem auto;
+    margin: 1.6rem auto;
   }
 
   &__name {
     text-align: center;
+    letter-spacing: 0.2rem;
+  }
+
+  &__info {
+    margin: 1.6rem;
+
+    @media (min-width: 550px) {
+      margin: 1.6rem 6.4rem;
+    }
+
+    @media (min-width: 750px) {
+      margin: 1.6rem 12.8rem;
+    }
+  }
+}
+
+.blog {
+  display: inline-block;
+
+  @media (min-width: 550px) {
+    margin: 2.4rem 0;
+  }
+
+  &__post {
+    display: inline-block;
+    padding-bottom: 1.6rem;
+    //border-bottom: 1.6rem solid #ddd;
+
+    @media (min-width: 550px) {
+      padding-bottom: 2.4rem;
+    }
+
+    &Image {
+      width: 16rem;
+      height: 16rem;
+      margin: 1.6rem auto;
+      border-radius: 8rem;
+
+      &--originStory {
+        background: url('../images/sunset-in-mexico.jpg') no-repeat 50% 50%;
+        background-size: cover;
+      }
+
+      &--theGirlWithTheDragonTattoo {
+        background: url('../images/dragon-tatoo.png') no-repeat 50% 50%;
+        background-size: contain;
+      }
+
+      &--thePerksOfBeingAWallflower {
+        background: url('../images/wallflower.jpg') no-repeat 50% 50%;
+        background-size: cover;
+      }
+    }
+
+    &Title {
+      text-align: center;
+      margin: 1.6rem;
+
+      @media (min-width: 550px) {
+        margin: 1.6rem 6.4rem;
+      }
+      @media (min-width: 750px) {
+        margin: 1.6rem 12.8rem;
+      }
+    }
+
+    &Content {
+      margin: 1.6rem;
+      
+      @media (min-width: 550px) {
+        margin: 1.6rem 6.4rem;
+      }
+      @media (min-width: 750px) {
+        margin: 1.6rem 12.8rem;
+      }
+    }
+
+    &ReadMore {
+      margin: 1.6rem;
+        
+      @media (min-width: 550px) {
+        margin: 1.6rem 6.4rem;
+      }
+
+      @media (min-width: 750px) {
+        margin: 1.6rem 12.8rem;
+      }
+    }
   }
 }
 
 .post {
-  &__image {
-    width: 15rem;
-    height: 15rem;
-    margin: 0 auto 2rem auto;
-    border-radius: 7.5rem;
+  display: inline-block;
 
-    &--originStory {
-      background: url('../images/sunset-in-mexico-large.jpg') no-repeat 50% 50%;
-      background-size: cover;
+  @media (min-width: 550px) {
+    margin: 2.4rem 0;
+  }
+
+  &__title {
+    margin: 1.6rem;
+
+    @media (min-width: 550px) {
+      margin: 1.6rem 6.4rem;
     }
 
-    &--theGirlWithTheDragonTattoo {
-      background: url('../images/dragon-tatoo-large.png') no-repeat 50% 50%;
-      background-size: contain;
+    @media (min-width: 750px) {
+      margin: 1.6rem 12.8rem;
+    }
+  }
+
+  &__content {
+    margin: 1.6rem;
+
+    @media (min-width: 550px) {
+      margin: 1.6rem 6.4rem;
     }
 
-    &--thePerksOfBeingAWallflower {
-      background: url('../images/wallflower-large.jpg') no-repeat 50% 50%;
-      background-size: cover;
+    @media (min-width: 750px) {
+      margin: 1.6rem 12.8rem;
+    }
+  }
+
+  &__date {
+    margin: 1.6rem;
+
+    @media (min-width: 550px) {
+      margin: 1.6rem 6.4rem;
+    }
+
+    @media (min-width: 750px) {
+      margin: 1.6rem 12.8rem;
+    }
+  }
+
+  &__comments {
+    margin: 1.6rem;
+
+    @media (min-width: 550px) {
+      margin: 1.6rem 6.4rem;
+    }
+
+    @media (min-width: 750px) {
+      margin: 1.6rem 12.8rem;
+    }
+  }
+}
+
+.service {
+  margin: 1.6rem;
+
+  @media (min-width: 550px) {
+    margin: 1.6rem 6.4rem;
+  }
+
+  @media (min-width: 750px) {
+    margin: 1.6rem 12.8rem;
+  }
+
+  &s {
+    display: inline-block;
+
+    @media (min-width: 550px) {
+      margin: 2.4rem 0;
     }
   }
 }
@@ -286,11 +548,17 @@ body {
   }
 }
 
-.container {
-  padding: 0.5rem;
-}
-
 .contact {
+  display: inline-block;
+
+  &__information {
+    margin: 1.6rem;
+  }
+
+  &__form {
+    margin: 1.6rem;
+  }
+
   &__gotcha {
     display: none;
   }
@@ -298,6 +566,11 @@ body {
   &__message {
     resize: vertical;
   }
+}
+
+.notFound {
+  display: inline-block;
+  margin: 1.6rem;
 }
 
 .footer {
@@ -312,7 +585,7 @@ body {
     background-color: white;
   }
 }
-
+/*
 @media (min-width: 550px) {
   .banner {
     &__text {
@@ -396,7 +669,7 @@ body {
     padding: 5rem 20rem;
   }
 }
-
+*/
 .u-paddedList {
   padding: 0 2rem;
 }
@@ -409,4 +682,8 @@ body {
 
 .u-italicized {
   font-style: italic;
+}
+
+.u-chunkText {
+  display: inline-block;
 }

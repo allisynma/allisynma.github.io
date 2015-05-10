@@ -13,7 +13,7 @@ Welcome to my new series of book vs. movie blog posts! The first book/movie comb
 The discussion of the book and movie are both based on the assumptions that you have seen/read it. If not please be aware that there are spoilers!
 
 
-##Plot
+###Plot
 
 **Book:**
  
@@ -35,7 +35,7 @@ Throughout the movie the plot line follows the book fairly closely. Every scene 
 6.	Harriet. Why did they change the ending? The woman who is supposed to be Anita is now suddenly Harriet. How did that happen? And where is the real Anita? Wouldn’t her own family have realized that it wasn’t Anita that was on the phone when they called? Or realized something weird was up even if they didn’t keep in contact?
 7.	And finally the dilemma that Blomkvist and Salander face as they have to tell Henrik the terrible truth about Martin’s double life; where is it? There is no tension here as they reintroduce Harriet back into Henrik’s life.
 
-##Character Development
+###Character Development
 #Lisbeth Salander:
 **Book:**
 
@@ -56,5 +56,5 @@ It is in the answer to the mystery of Harriet’s disappearance that Blomkvist a
 
 In the movie, Blomkvist’s desire to give up entirely on this mystery mission on his train ride out to Hedestad is not apparent to the audience. Instead it seems nothing is troubling him as he meets with Henrik. He is also portrayed as a family man from the scene with his daughter at Christmas and the fact that she is only one of two people to come and visit him (In the book he has a long series of loves, but hardly knows his daughter). As well, his time on the island seems to be one of pure commitment to the project assigned to him, since he has no relations with Cecilia in the movie. His many women never interact with each other creating no tension between Berger, Cecilia, or Salander. In fact, Blomkvist’s lack of hesitancy in regards to sleeping with Salander and the fact that he has no other women at the same time makes the relationship appear almost like a monogamous until the end of the movie. Blomkvist appears to be a stable journalist throughout the movie and faces no true personal dilemmas other than the pressing problem of Harriet’s disappearance.
 
-##Summary
+###Summary
 While the book is filled with character’s desires not being met, and their expectations in situations being bent, the movie lacks the friction needed between the characters in order to keep the plot line interesting to the audience. 
