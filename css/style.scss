@@ -1,23 +1,15 @@
 ---
 ---
-
 html {
-  //height: 100%;
   box-sizing: border-box;
   background-color: #DDD;
 }
 
-body {
-  //min-height: 100%;
-}
-
 .container {
   height: 100%;
-  //padding: 0.5rem;
 }
 
 .content {
-  //margin-bottom: 1rem;
   background-color: white;
 }
 
@@ -47,16 +39,11 @@ body {
 
 .header {
   position: absolute;
-  //top: 0;
-  //left: 0;
   width: 100%;
   z-index: 100;
-  //color: white;
 
   &__logo {
-    //margin: 1.5rem 1.5rem 0.5rem 1.5rem;
     margin: 1.6rem;
-    //display: inline-block;
 
     @media (min-width: 750px) {
       float: left;
@@ -65,8 +52,6 @@ body {
     &Text {
       letter-spacing: 0.2rem;
       font-size: 2.4rem;
-      //font-weight: 500;
-      //margin: 0;
     }
 
     &Link {
@@ -75,7 +60,6 @@ body {
   }
 
   &__navBar {
-    //margin: 0.5rem 1.5rem 1.5rem 1.5rem;
     margin: 1.6rem;
 
     @media (min-width: 550px) {
@@ -90,23 +74,14 @@ body {
 }
 
 .navBar {
-  //display: inline-block;
-
   &__list {
-    //display: inline-block;
     list-style: none;
-    //padding: 0;
-    //margin: 0;
     overflow: hidden;
 
     &Item {
-      //display: inline-block;
       font-size: 1.4rem;
       text-transform: uppercase;
-      //cursor: pointer;
-      //padding-left: 0.5rem;
       width: 50%;
-      //box-sizing: border-box;
       float: left;
 
       @media (min-width: 750px) {
@@ -133,10 +108,7 @@ body {
   position: relative;
   top: 0;    
   left: 0;
-  //width: 100%;
-  //padding-top: 12rem;
   padding-top: 13rem;
-  //padding-bottom: 8rem;
   padding-bottom: 8rem;
 
   &--about {
@@ -194,21 +166,15 @@ body {
   }
 
   &__content {
-    //display: table;
-    //position: relative;
     color: white;
     text-align: center;
     text-transform: uppercase;
-    //font-size: 1.4rem;
     font-size: 1.2rem;
     letter-spacing: 0.2rem;
-    //margin: 3rem;
     margin: 1.6rem;
     height: 7.8rem;
 
     &Text {
-      //display: table-cell;
-      //vertical-align: middle;
       position: relative;
       top: 50%;
       transform: translateY(-50%);
@@ -225,16 +191,13 @@ body {
 
   &__contact {
     position: absolute;
-    //right: 1rem;
     right: 1.6rem;
-    //bottom: 1rem;
     bottom: 1.6rem;
     border: 0.2rem solid white;
     cursor: pointer;
 
     &Link {
       display: inline-block;
-      //padding: 1rem;
       padding: 0.8rem;
       color: white;
     }
@@ -306,7 +269,6 @@ body {
 
     &Book {
       &Cover {
-        //display: inline-block;
         float: right;
         position: relative;
         top: 50%;
@@ -334,7 +296,6 @@ body {
 
     &Company {
       &Logo{
-        //display: block;
         float: right;
         position: relative;
         top: 50%;
@@ -393,7 +354,6 @@ body {
   &__post {
     display: inline-block;
     padding-bottom: 1.6rem;
-    //border-bottom: 1.6rem solid #ddd;
 
     @media (min-width: 550px) {
       padding-bottom: 2.4rem;
@@ -534,20 +494,6 @@ body {
   }
 }
 
-.card {
-  box-shadow: 0.5rem 0.5rem 0.3rem #AAA;
-
-  &--content {
-    margin-top: 1rem;
-    padding: 2rem 1rem;
-    background-color: white;
-  }
-
-  &--noBoxShadow {
-    box-shadow: none;
-  }
-}
-
 .contact {
   display: inline-block;
 
@@ -573,103 +519,10 @@ body {
   margin: 1.6rem;
 }
 
-.footer {
-  position: absolute;
-  right: 0.5rem;
-  left: 0.5rem;
-
-  &__contact {
-    padding: 2rem;
-    font-size: 2rem;
-    text-align: center;
-    background-color: white;
-  }
-}
-/*
-@media (min-width: 550px) {
-  .banner {
-    &__text {
-      width: 450px;
-      margin: 4rem auto;
-    }
-  }
-
-  .card--content {
-    padding: 2.5rem 2rem;
-  }
-
-  .post__image {
-    margin-bottom: 2.5rem;
-  }
+.u-fullWidth {
+  width: 100%;
 }
 
-@media (min-width: 750px) {
-  .container {
-    padding: 1rem;
-  }
-
-  .header {
-    &__logo {
-      display: inline-block;
-      margin-left: 2.5rem;
-      margin-top: 2rem;
-    }
-
-    &__navBar {
-      position: absolute;
-      top: 0;
-      right: 0;
-      margin-top: 2.75rem;
-      margin-right: 2.5rem;
-    }
-  }
-
-  .navBar {
-    &__listItem {
-      width: auto;
-      padding-left: 1rem;
-      font-size: 1.2rem;
-    }
-  }
-
-  .banner {
-    &__text {
-      width: 600px;
-      margin: 5rem auto;
-    }
-  }
-
-  .card--content {
-    padding: 2rem;
-  }
-
-  .service {
-    box-sizing: border-box;
-  }
-}
-
-@media (min-width: 1000px) {
-  .navBar {
-    &__listItem {
-      padding-left: 1.5rem;
-    }
-  }
-
-  .banner {
-    &__text {
-      margin: 6rem auto;
-
-      .banner--editingServices & {
-        min-width: 75%;
-      }
-    }
-  }
-
-  .card--content {
-    padding: 5rem 20rem;
-  }
-}
-*/
 .u-paddedList {
   padding: 0 2rem;
 }
