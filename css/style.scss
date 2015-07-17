@@ -298,16 +298,13 @@ html {
 
     &Company {
       &Logo{
+        display: block;
         float: right;
         position: relative;
         top: 50%;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         margin-right: 1.6rem;
-
-        &Image {
-          display: block;
-        }
       }
     }
   }
