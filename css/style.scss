@@ -326,6 +326,22 @@ html {
     margin: 1.6rem auto;
   }
 
+  &__podcast {
+    margin: 1.6rem;
+
+    @media (min-width: 550px) {
+      margin: 1.6rem 6.4rem;
+    }
+
+    @media (min-width: 750px) {
+      margin: 1.6rem 12.8rem;
+    }
+
+    &__embed {
+      margin-top: 1.6rem;
+    }
+  }
+
   &__name {
     text-align: center;
     letter-spacing: 0.2rem;
