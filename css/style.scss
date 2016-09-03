@@ -339,6 +339,13 @@ html {
 
     &__embed {
       margin-top: 1.6rem;
+      
+      &__iframe {
+        display: block;
+        width: 100%;
+        max-width: 560px;
+        margin: 0 auto;
+      }
     }
   }
 
